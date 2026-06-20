@@ -26,11 +26,17 @@ export default function PrivacyPolicy() {
         <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold))` }}></div>
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
-          <Link href="/palm-court-new-launch" className="flex items-center">
-            <img src={logoImages.tarc} alt="SONGS OF THE SUN" style={{ height: '50px', width: 'auto', display: 'block' }} />
+          <Link href="/luxury-apartments-hyderabad" className="flex items-center">
+            <style>{`
+              .privacy-logo { height: 60px; width: auto; display: block; object-fit: contain; transform: scale(1.4, 1.25); transform-origin: left center; }
+              @media(max-width: 768px) {
+                .privacy-logo { height: 52px; transform: scale(1.3, 1.2); transform-origin: left center; }
+              }
+            `}</style>
+            <img src={logoImages.tarc} alt="SONGS OF THE SUN" className="privacy-logo" />
           </Link>
           <Link
-            href="/palm-court-new-launch"
+            href="/luxury-apartments-hyderabad"
             className="btn-gold shadow-lg !text-[11px] !px-3 !py-2 sm:!text-sm sm:!px-6 sm:!py-3"
           >
             <span className="hidden sm:inline">BACK TO HOME</span><span className="sm:hidden">HOME</span>
@@ -66,7 +72,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <div className="flex items-center justify-center gap-2 text-white/80 text-sm" style={{ fontFamily: 'var(--font-sans)' }}>
-            <Link href="/palm-court-new-launch" className="hover:text-white transition-colors" style={{ color: 'var(--color-gold)' }}>Home</Link>
+            <Link href="/luxury-apartments-hyderabad" className="hover:text-white transition-colors" style={{ color: 'var(--color-gold)' }}>Home</Link>
             <span>›</span>
             <span>Privacy Policy</span>
           </div>
@@ -89,10 +95,10 @@ export default function PrivacyPolicy() {
             <p className="mb-6 sm:mb-8 text-sm sm:text-base" style={{ lineHeight: 1.8, color: '#444', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
               At{' '}
               <Link
-                href="/palm-court-new-launch"
+                href="/luxury-apartments-hyderabad"
                 style={{ color: 'var(--color-gold-dark)', fontWeight: '600' }}
               >
-                prestigemadhavaram.co.in
+                myscapesongsofthesun.in
               </Link>{' '}
               (Authorized Marketing Partner), we respect your privacy and are committed to safeguarding your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
             </p>
@@ -304,7 +310,7 @@ export default function PrivacyPolicy() {
       <footer style={{ background: 'var(--color-dark)', color: '#fff', padding: '24px', textAlign: 'center', borderTop: '1px solid #333' }}>
         <p style={{ fontSize: '13px', color: '#888', fontFamily: 'var(--font-sans)' }}>
           &copy; 2026 SONGS OF THE SUN. All rights reserved |{' '}
-          <Link href="/palm-court-new-launch" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
+          <Link href="/luxury-apartments-hyderabad" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
         </p>
       </footer>
     </main>

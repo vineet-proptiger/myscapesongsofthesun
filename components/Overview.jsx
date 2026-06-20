@@ -29,7 +29,6 @@ const infoItems = [
   { label: 'APARTMENTS',    value: '592 Units' },
   { label: 'TOWERS',        value: '4 Towers' },
   { label: 'FLOORS',        value: 'G + 37' },
-  { label: 'COMPLETION',    value: 'Jun 2028' },
 ]
 
 const Overview = ({ setIsOpen }) => (
@@ -91,7 +90,7 @@ const Overview = ({ setIsOpen }) => (
           >
             <CurvedCorners />
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-[1px]" style={{ background: '#D5C2A8' }}>
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-[1px]" style={{ background: '#D5C2A8' }}>
             {infoItems.map((item, i) => (
               <div key={i} className="bg-white flex flex-col justify-center" style={{
                 padding: '20px 16px',

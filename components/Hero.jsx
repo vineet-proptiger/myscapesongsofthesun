@@ -227,15 +227,6 @@ const Hero = ({ setIsOpen }) => {
             flex-direction: column !important;
             background: #FFF9E6 !important;
           }
-          
-          .desktop-carousel { display: none !important; }
-          .carousel-dots { display: none !important; }
-          
-          .mobile-hero-img {
-            display: block !important;
-            width: 100%;
-            height: auto;
-          }
 
           .hero-overlay {
             display: none !important;
@@ -331,19 +322,6 @@ const Hero = ({ setIsOpen }) => {
             />
           </div>
         ))}
-      </div>
-
-      {/* ── Mobile Single Image ── */}
-      <div className="mobile-hero-img" style={{ display: 'none' }}>
-        <Image
-          src={heroImages.smDevice}
-          alt="Hero Banner Mobile"
-          width={768}
-          height={800}
-          className="hero-image"
-          priority
-          sizes="100vw"
-        />
       </div>
 
       {/* ── Dark overlay for text legibility ── */}
