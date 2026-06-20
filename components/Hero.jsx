@@ -57,7 +57,7 @@ const Hero = ({ setIsOpen }) => {
         /* Main title */
         .hero-title {
           font-family: var(--font-jost), Montserrat, sans-serif;
-          font-size: clamp(22px, 3vw, 42px);
+          font-size: clamp(20px, 3vw, 40px);
           font-weight: 800;
           color: #fff;
           text-transform: uppercase;
@@ -270,13 +270,20 @@ const Hero = ({ setIsOpen }) => {
 
           .hero-cta-row > button,
           .hero-cta-row > a {
-            width: 100% !important;
+            width: 260px !important;
             justify-content: center !important;
             text-align: center;
             padding: 12px 10px !important;
             font-size: 11px !important;
             white-space: normal !important;
             box-shadow: none !important;
+          }
+          
+          .hero-cta-row > div {
+            width: 260px !important;
+            justify-content: center !important;
+            text-align: center;
+            white-space: normal !important;
           }
           
           .hero-cta-row > a.btn-brand {
@@ -332,7 +339,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Main Heading */}
         <h1 className="hero-title">
-          Songs of the Sun
+         Myscape Songs of the Sun
         </h1>
 
         {/* Subtitle */}
@@ -359,35 +366,25 @@ const Hero = ({ setIsOpen }) => {
           ))}
         </div>
 
-        {/* Price Line (Moved just above buttons) */}
-        <p className="hero-price-line">
-          Premium 3 &amp; 4 BHK Homes Starting at&nbsp;
-          <span className="hero-price-amt">₹ 2.83 Cr*</span>
+        {/* Restored Subtitle */}
+        <p className="hero-price-line" style={{ marginBottom: '0px' }}>
+          Premium 3 &amp; 4 BHK Luxury Residences
         </p>
 
         {/* CTA Row */}
-        <div className="hero-cta-row">
+        <div className="hero-cta-row" style={{ marginTop: '16px' }}>
 
-          {/* Button 1 — Unlock Pricing: white text on dark hero bg */}
+          {/* Button 1 — Static Price Badge */}
+          <div
+            className="btn-gold-outline hero-btn-one"
+            style={{ fontSize: '14px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
+          >
+            Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 2.83 Cr*</span>
+          </div>
+
+          {/* Button 2 — Popup Trigger (global btn-brand) */}
           <button
             onClick={() => setIsOpen(true)}
-            className="btn-gold-outline hero-btn-one"
-            style={{ fontSize: '12px', padding: '11px 22px' }}
-          >
-            Unlock Pricing &amp; Floor Plans
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" strokeWidth="2.5"
-              strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </button>
-
-          {/* Button 2 — WhatsApp (global btn-brand) */}
-          <a
-            href="https://wa.me/919718344024?text=Hi%20I%20am%20interested%20in%20Songs%20of%20the%20Sun%20Financial%20District%20Hyderabad"
-            target="_blank"
-            rel="noopener noreferrer"
             className="btn-brand"
             style={{ fontSize: '12px', padding: '11px 22px' }}
           >
@@ -399,7 +396,7 @@ const Hero = ({ setIsOpen }) => {
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
             Schedule Site Visit
-          </a>
+          </button>
 
         </div>
 
