@@ -270,19 +270,20 @@ const Hero = ({ setIsOpen }) => {
 
           .hero-cta-row > button,
           .hero-cta-row > a {
-            width: 260px !important;
+            width: 100% !important;
             justify-content: center !important;
             text-align: center;
             padding: 12px 10px !important;
-            font-size: 11px !important;
+            font-size: 12px !important;
             white-space: normal !important;
             box-shadow: none !important;
           }
           
           .hero-cta-row > div {
-            width: 260px !important;
+            width: 100% !important;
             justify-content: center !important;
             text-align: center;
+            font-size: 15px !important;
             white-space: normal !important;
           }
           
@@ -392,16 +393,16 @@ const Hero = ({ setIsOpen }) => {
           {/* Button 1 — Static Price Badge */}
           <div
             className="btn-gold-outline hero-btn-one"
-            style={{ fontSize: '14px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
+            style={{ fontSize: '15px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
           >
-            Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 2.83 Cr*</span>
+            Price starts <span className="hero-price-amt" style={{ fontSize: '16px', marginLeft: '6px' }}>₹ 2.83 Cr*</span>
           </div>
 
           {/* Button 2 — Popup Trigger (global btn-brand) */}
           <button
             onClick={() => setIsOpen(true)}
             className="btn-brand"
-            style={{ fontSize: '12px', padding: '11px 22px' }}
+            style={{ fontSize: '13px', padding: '11px 22px' }}
           >
             {/* Calendar icon */}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
