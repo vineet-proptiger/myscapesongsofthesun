@@ -36,6 +36,28 @@ export const metadata = {
   metadataBase: new URL('https://myscapesongsofthesun.in'),
   title: 'Songs of the Sun | Premium 2 & 3 BHK Homes in Financial District, Hyderabad',
   description: "Songs of the Sun — South Hyderabad's premier luxury high-rise in Financial District. Premium 2 & 3 BHK residences starting from ₹80 Lacs. Designed for those who demand the extraordinary. MAHARERA: TBD.",
+  openGraph: {
+    title: 'Songs of the Sun | Premium 2 & 3 BHK Homes in Financial District, Hyderabad',
+    description: "South Hyderabad's premier luxury high-rise in Financial District. Premium 2 & 3 BHK residences starting from ₹80 Lacs.",
+    url: 'https://myscapesongsofthesun.in',
+    siteName: 'Myscape Songs of the Sun',
+    images: [
+      {
+        url: '/images/hero/banner1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Songs of the Sun Hyderabad - Premium Apartments',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Songs of the Sun | Premium 2 & 3 BHK Homes in Financial District, Hyderabad',
+    description: "South Hyderabad's premier luxury high-rise in Financial District. Premium 2 & 3 BHK residences starting from ₹80 Lacs.",
+    images: ['/images/hero/banner1.webp'],
+  },
 }
 
 export default function RootLayout({ children }) {
