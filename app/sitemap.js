@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = 'https://prestigepalmcourtmahalaxmi.in'
+  const base = 'https://myscapesongsofthesun.in'
 
   return [
     {

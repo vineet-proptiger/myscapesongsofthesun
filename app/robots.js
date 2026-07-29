@@ -5,7 +5,7 @@ export default function robots() {
       allow: '/',
       disallow: '',
     },
-    sitemap: 'https://prestigepalmcourtmahalaxmi.in/sitemap.xml',
+    sitemap: 'https://myscapesongsofthesun.in/sitemap.xml',
   }
 }
 

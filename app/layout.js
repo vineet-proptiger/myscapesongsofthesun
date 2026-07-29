@@ -33,6 +33,7 @@ const nephilm = localFont({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://myscapesongsofthesun.in'),
   title: 'Songs of the Sun | Premium 2 & 3 BHK Homes in Financial District, Hyderabad',
   description: "Songs of the Sun — South Hyderabad's premier luxury high-rise in Financial District. Premium 2 & 3 BHK residences starting from ₹80 Lacs. Designed for those who demand the extraordinary. MAHARERA: TBD.",
 }
@@ -51,15 +52,15 @@ export default function RootLayout({ children }) {
               "@type": "Article",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://prestigepalmcourtmahalaxmi.in/"
+                "@id": "https://myscapesongsofthesun.in/"
               },
               "headline": "Songs of the Sun | Premium 2 & 3 BHK Homes in Financial District, Hyderabad",
               "description": "Songs of the Sun, South Hyderabad's premier luxury high-rise in Financial District. Premium 2 & 3 BHK residences starting from ₹80 Lacs. MAHARERA: TBD.",
-              "image": "https://prestigepalmcourtmahalaxmi.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
+              "image": "https://myscapesongsofthesun.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
               "author": {
                 "@type": "Organization",
                 "name": "Proptiger Marketing Services Pvt Ltd",
-                "url": "https://www.proptiger.com/mumbai/mahalaxmi/songs-of-the-sun"
+                "url": "https://www.proptiger.com/hyderabad/financial-district/myscape-songs-of-the-sun-3478881"
               },
               "publisher": {
                 "@type": "Organization",
