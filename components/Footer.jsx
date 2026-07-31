@@ -21,7 +21,7 @@ const Footer = () => (
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        Songs of the Sun is South Hyderabad&apos;s premier luxury high-rise residential development in Financial District, offering premium 3 &amp; 4 BHK residences starting from ₹2.83 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Songs of the Sun is designed for those who demand the extraordinary.
+        Songs of the Sun is South Hyderabad&apos;s premier luxury high-rise residential development in Financial District, offering premium 3 &amp; 4 BHK residences starting from ₹3.2 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Songs of the Sun is designed for those who demand the extraordinary.
       </p>
       
       {/* RERA Block */}
