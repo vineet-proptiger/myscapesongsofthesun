@@ -119,7 +119,7 @@ const Overview = ({ setIsOpen }) => (
         </div>
 
         {/* ── Right Side: Image ── */}
-        <div className="hidden lg:block lg:w-1/2" data-aos="fade-left">
+        <div className="w-full lg:w-1/2" data-aos="fade-left">
           <div className="relative w-full flex justify-center items-center">
             <Image 
               src={overviewImage} 
@@ -127,7 +127,7 @@ const Overview = ({ setIsOpen }) => (
               width={1000}
               height={1200}
               className="rounded-lg shadow-lg"
-              style={{ width: '75%', height: 'auto', objectFit: 'contain', margin: '0 auto' }}
+              style={{ width: '85%', maxWidth: '460px', height: 'auto', objectFit: 'contain', margin: '0 auto' }}
             />
           </div>
         </div>

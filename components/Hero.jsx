@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { heroImages } from '../lib/images'
 
 const slides = [
-  { img: heroImages.banner },
-  { img: heroImages.banner2 }
+  { img: heroImages.banner, smImg: heroImages.smDevice1 },
+  { img: heroImages.banner2, smImg: heroImages.smDevice2 }
 ]
 
 const Hero = ({ setIsOpen }) => {
@@ -372,19 +372,25 @@ const Hero = ({ setIsOpen }) => {
         ))}
       </div>
 
-      {/* ── Mobile Static Image ── */}
+      {/* ── Mobile Carousel ── */}
       <div className="hero-slider-wrapper grid md:hidden">
-        <div className="slide-layer active" style={{ gridArea: '1 / 1 / 2 / 2' }}>
-          <Image
-            src="/images/hero/smDevice.webp"
-            alt="Songs of the Sun Mobile Banner"
-            width={768}
-            height={800}
-            className="hero-image"
-            priority={true}
-            sizes="100vw"
-          />
-        </div>
+        {slides.map((slide, index) => (
+          <div 
+            key={index} 
+            className={`slide-layer ${index === currentSlide ? 'active' : ''}`}
+            style={{ gridArea: '1 / 1 / 2 / 2' }}
+          >
+            <Image
+              src={slide.smImg}
+              alt={`Songs of the Sun Mobile Banner ${index + 1}`}
+              width={768}
+              height={768}
+              className="hero-image"
+              priority={index === 0}
+              sizes="100vw"
+            />
+          </div>
+        ))}
       </div>
 
       {/* ── Dark overlay for text legibility ── */}
