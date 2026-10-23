@@ -126,8 +126,7 @@ const Overview = ({ setIsOpen }) => (
               alt="Songs of the Sun Overview" 
               width={1000}
               height={1200}
-              className="rounded-lg shadow-lg"
-              style={{ width: '85%', maxWidth: '460px', height: 'auto', objectFit: 'contain', margin: '0 auto' }}
+              className="rounded-lg shadow-lg w-[96%] sm:w-[90%] lg:w-[75%] max-w-[500px] h-auto object-contain mx-auto"
             />
           </div>
         </div>
